@@ -31,7 +31,7 @@ function registerUnityProcess(isClose=false) {
 	const logValue = {
 		process: procces2Watch,
 		status: isClose ? 'close' : 'open',
-		dateTime: moment().format("YYYY/MM/d HH:mm:SS")
+		dateTime: moment().format("YYYY/MM/d HH:mm:ss")
 	};
 
 	logJSON.logs.push(logValue);
