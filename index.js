@@ -28,12 +28,15 @@ function registerUnityProcess(isClose=false) {
 	const countTerm = isClose ? 'closeCount' : 'openCount';
 	const countParam = logJSON[countTerm];
 	const count = !!countParam ? countParam : 0;
-
-	logJSON.logs.push({
+	const logValue = {
 		process: procces2Watch,
 		status: isClose ? 'close' : 'open',
 		dateTime: moment().format("YYYY/MM/d HH:mm:SS")
-	});
+	};
+
+	logJSON.logs.push(logValue);
+
+	console.log(logValue);
 
 	logJSON[countTerm] = count + 1;
 
