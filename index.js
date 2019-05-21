@@ -5,7 +5,7 @@ const moment = require('moment');
 const startTime = moment();
 const logFolder = './logs';
 const procces2Watch = process.argv[2].trim();
-const logFileName = `${logFolder}/${moment().format("YYYY-MM-d")}.json`;
+const logFileName = `${logFolder}/${procces2Watch}_${moment().format("YYYY-MM-d")}.json`;
 
 var hasProcessRunning = false;
 
