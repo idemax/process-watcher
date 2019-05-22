@@ -5,7 +5,7 @@ const moment = require('moment');
 const startTime = moment();
 const logFolder = './logs';
 const procces2Watch = process.argv[2].trim();
-const logFileName = `${logFolder}/${procces2Watch}_${moment().format("YYYY-MM-d")}.json`;
+const logFileName = `${logFolder}/${procces2Watch}_${moment().format("YYYY-MM-DD")}.json`;
 
 var hasProcessRunning = false;
 
@@ -31,7 +31,7 @@ function registerUnityProcess(isClose=false) {
 	const logValue = {
 		process: procces2Watch,
 		status: isClose ? 'close' : 'open',
-		dateTime: moment().format("YYYY/MM/d HH:mm:ss")
+		dateTime: moment().format("YYYY/MM/DD HH:mm:ss")
 	};
 
 	logJSON.logs.push(logValue);
