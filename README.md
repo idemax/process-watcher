@@ -18,7 +18,7 @@ Example: `node .\index.js "sublime_text.exe"`
 
 In the project folder has a `logs` folder where will be saved every log JSON file.
 
-Log example:
+Log example: `./logs/unity.exe_2019-05-2.json`
 
 ```
 {
