@@ -1,5 +1,7 @@
 # crash-counter
 
+You can watch and log a process in Windows.
+
 ## Install
 
 1. Node.js / NPM
