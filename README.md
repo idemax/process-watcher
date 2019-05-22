@@ -17,3 +17,24 @@ Example: `node .\index.js "sublime_text.exe"`
 ## Log
 
 In the project folder has a `logs` folder where will be saved every log JSON file.
+
+Log example:
+
+```
+{
+    "logs": [
+        {
+            "process": "unity.exe",
+            "status": "open",
+            "dateTime": "2019/05/2 17:12:94"
+        },
+        {
+            "process": "unity.exe",
+            "status": "close",
+            "dateTime": "2019/05/2 17:12:40"
+        }
+    ],
+    "openCount": 1,
+    "closeCount": 1
+}
+```
