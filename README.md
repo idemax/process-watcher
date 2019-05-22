@@ -1,4 +1,4 @@
-# crash-counter
+# process-watcher
 
 You can watch and log a process in Windows.
 
